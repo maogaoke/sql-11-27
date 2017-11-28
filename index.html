@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+<pre>
     1.查询所有商品的平均价格
     select avg(sprice) as averagep from shangpin;
     2.查询某一类型商品的平均价格
@@ -24,5 +25,6 @@
     select shangpin.*,type.tname from shangpin,type where shangpin.stypeid=type.id;
     8.查询销量最高的三个商品
     select shangpin.sname,sorder.number from shangpin,sorder where shangpin.id=sorder.sid order by sorder.number desc limit 0,3;
+</pre>
 </body>
 </html>
